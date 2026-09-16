@@ -1,0 +1,7 @@
+Rows: 10194
+Columns: 21
+Exact duplicate rows: 0
+Total missing cells: 0
+Negative-profit rows (valid business values): 1901
+
+See issue_log_generated.csv for all checks.

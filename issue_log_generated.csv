@@ -1,0 +1,12 @@
+﻿Issue ID,Check Type,Field(s),Validation / Finding,Count,Status,Action
+DQ-000,Schema,Dataset,Missing expected columns,0,PASS,None
+DQ-001,Missing values,All columns,Count of blank/null cells,0,PASS,No action
+DQ-002,Duplicates,Full row,Exact duplicate rows,0,PASS,No action
+DQ-003,Date validity,Order Date / Ship Date,Invalid dates or Ship Date earlier than Order Date,0,PASS,Keep valid dates; investigate invalid rows
+DQ-005,Range / type,Sales,Sales should be > 0,0,PASS,No action
+DQ-006,Range / type,Quantity,Quantity should be a positive integer,0,PASS,No action
+DQ-007,Range / type,Discount,Discount should be between 0 and 1,0,PASS,No action
+DQ-008,Range / type,Profit,Profit may be negative; negative values are valid business outcomes,0,PASS,No action
+DQ-007,Consistency,Category / Sub-Category,Sub-category maps to more than one category,0,PASS,No action
+DQ-008,Consistency,Region,Unexpected region values,0,PASS,No action
+DQ-009,Business rule,Profit,"Negative-profit rows are valid loss transactions and should be flagged, not deleted",1901,INFO,Retain rows; analyze pricing/discount/product mix
